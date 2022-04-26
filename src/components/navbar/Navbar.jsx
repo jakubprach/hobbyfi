@@ -16,6 +16,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import CssBaseline from '@mui/material/CssBaseline';
+import './navbar.css'
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -159,7 +160,7 @@ export default function PrimarySearchAppBar() {
     <React.Fragment>
     <CssBaseline />
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar className='bg-color' position="static">
         <Toolbar>
           <IconButton
             size="large"
@@ -176,7 +177,7 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+            Hobbyfi
           </Typography>
           <Search>
             <SearchIconWrapper>
