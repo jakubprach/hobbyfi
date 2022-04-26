@@ -6,10 +6,13 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import CssBaseline from '@mui/material/CssBaseline';
 
 export const Home = () => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <React.Fragment>
+      <CssBaseline />
+      <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
           <IconButton
@@ -28,5 +31,6 @@ export const Home = () => {
         </Toolbar>
       </AppBar>
     </Box>
+    </React.Fragment>
   )
 }
