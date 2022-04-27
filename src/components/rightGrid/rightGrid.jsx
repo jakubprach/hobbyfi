@@ -11,7 +11,7 @@ import DraftsIcon from '@mui/icons-material/Drafts';
 
 export default function BasicList() {
   return (
-    <Box sx={{ width: '100%', margin:3 }}>
+    <Box sx={{ width: '100%',}}>
       <nav aria-label="main mailbox folders">
         <List>
           <ListItem disablePadding>

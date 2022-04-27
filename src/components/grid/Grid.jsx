@@ -7,6 +7,7 @@ import { Posts } from "../../postData"
 import { Grid } from '@mui/material';
 import AlignItemsList from '../../components/leftGrid/leftGrid';
 import BasicList from '../../components/rightGrid/rightGrid';
+import './Grid.css'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -21,7 +22,9 @@ export default function BasicGrid() {
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
         <Grid item xs={3}>
-          <AlignItemsList/>
+          <div className='Sticky'>
+            <AlignItemsList />
+          </div>
         </Grid>
         <Grid item xs={6}>
     <div className="cards">
@@ -33,7 +36,9 @@ export default function BasicGrid() {
     </div>
         </Grid>
         <Grid item xs={3}>
-          <BasicList/>
+          <div className='Sticky'>
+            <BasicList />
+          </div>
         </Grid>
       </Grid>
     </Box>
