@@ -16,5 +16,14 @@ export const Posts = [
         text_short: "Association football, more commonly known as simply football or soccer,[a] is a team sport played with a spherical ball between two teams of 11 players. It is played by approximately 250 million players in over 200 countries and dependencies, making it the world's most popular sport.",
         text_long: "Football is played in accordance with a set of rules known as the Laws of the Game. The ball is 68–70 cm (27–28 in) in circumference and known as the football. The two teams compete to get the ball into the other team's goal (between the posts and under the bar), thereby scoring a goal. ",
         image: "https://images.pexels.com/photos/3074920/pexels-photo-3074920.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    },
+    {
+        id:3,
+        title: "Adam Prośniewski",
+        date: "April 14, 2022",
+        initials: "AP",
+        text_short: "Association football, more commonly known as simply football or soccer,[a] is a team sport played with a spherical ball between two teams of 11 players. It is played by approximately 250 million players in over 200 countries and dependencies, making it the world's most popular sport.",
+        text_long: "Football is played in accordance with a set of rules known as the Laws of the Game. The ball is 68–70 cm (27–28 in) in circumference and known as the football. The two teams compete to get the ball into the other team's goal (between the posts and under the bar), thereby scoring a goal. ",
+        image: "https://images.pexels.com/photos/3074920/pexels-photo-3074920.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     }
 ]
