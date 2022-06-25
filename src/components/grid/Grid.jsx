@@ -9,6 +9,8 @@ import AlignItemsList from '../../components/leftGrid/leftGrid';
 import BasicList from '../../components/rightGrid/rightGrid';
 import './Grid.css'
 
+import useWindowSize from "../../components/utils/useWindowSize";
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -18,29 +20,52 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function BasicGrid() {
+  
+  const { width } = useWindowSize();
+
   return (
+
+
+
     <Box sx={{ flexGrow: 1 }}>
+
+    {width > 700 && (
+      <>
       <Grid container spacing={3}>
+
         <Grid item xs={3}>
           <div className='Sticky'>
-            <AlignItemsList />
+          <AlignItemsList />
           </div>
         </Grid>
-        <Grid item xs={6}>
-    <div className="cards">
 
-      {Posts.map((p) => (
-        <Card key={p.id} post={p} />
-      ))}
-      
-    </div>
+        <Grid item xs={6}>
+          <div className="cards">
+            {Posts.map((p) => (
+            <Card key={p.id} post={p} />
+            ))}
+          </div>
         </Grid>
+
         <Grid item xs={3}>
           <div className='Sticky'>
             <BasicList />
           </div>
         </Grid>
+
       </Grid>
+      </>
+    )}
+
+    <Grid item xs={6}>
+      <div className="cards">
+        {Posts.map((p) => (
+        <Card key={p.id} post={p} />
+        ))}
+      </div>
+    </Grid>
+
+
     </Box>
   );
 }
