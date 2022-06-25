@@ -48,7 +48,7 @@ export default function AlignItemsList() {
               >
                 Mateusz Szreder
               </Typography>
-              {" Cześc, mam do sprzedania świerzą parę butów do kosza, zapraszam"}
+              {" Cześc, mam do sprzedania świeżą parę butów do kosza, zapraszam"}
             </React.Fragment>
           }
         />
