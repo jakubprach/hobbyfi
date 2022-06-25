@@ -94,6 +94,42 @@ const PostShare = () => {
       </div>
     </div>
     )}
+    {width <= 700 &&(
+
+    <div className="PostShare">
+    <img src={Image} alt="" />
+    <div>
+      <input type="text" placeholder="What's happening" />
+      <div className="postOptions">
+        <div className="option" style={{ color: "var(--photo)" }}
+        onClick={()=>imageRef.current.click()}
+        >
+          <UilScenery />
+          Photo
+        </div>
+        <button onClick={addPost} className="button ps-button">Share</button>
+        <div style={{ display: "none" }}>
+          <input
+            type="file"
+            name="myImage"
+            ref={imageRef}
+            onChange={onImageChange}
+          />
+        </div>
+      </div>
+    {image && (
+
+      <div className="previewImage">
+        <UilTimes onClick={()=>setImage(null)}/>
+        <img src={image.image} alt="" />
+      </div>
+
+    )}
+
+
+    </div>
+  </div>
+    )}
     </div>
   );
 };

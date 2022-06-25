@@ -56,7 +56,7 @@ export default function BasicGrid() {
       </Grid>
       </>
     )}
-
+    {width <= 700 && (
     <Grid item xs={6}>
       <div className="cards">
         {Posts.map((p) => (
@@ -64,6 +64,7 @@ export default function BasicGrid() {
         ))}
       </div>
     </Grid>
+    )}
 
 
     </Box>
