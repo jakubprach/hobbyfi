@@ -16,7 +16,15 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import CssBaseline from '@mui/material/CssBaseline';
-import './navbar.css'
+import './navbar.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -99,7 +107,8 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
+      <MenuItem onClick={handleMenuClose}>
+      <Link to="/profile">Profile</Link></MenuItem>
       <MenuItem onClick={handleMenuClose}>My account</MenuItem>
     </Menu>
   );
