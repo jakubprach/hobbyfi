@@ -181,10 +181,10 @@ export default function PrimarySearchAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography
+            component={Link} to={'/'}
             variant="h6"
             noWrap
-            component="div"
-            sx={{ display: { xs: 'none', sm: 'block' } }}
+            sx={{ display: { xs: 'none', sm: 'block',color:"white",textDecoration: "none"  } }}
           >
             Hobbyfi
           </Typography>
