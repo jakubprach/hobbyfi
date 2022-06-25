@@ -7,6 +7,7 @@ import { UilLocationPoint } from "@iconscout/react-unicons";
 import { UilSchedule } from "@iconscout/react-unicons";
 import { UilTimes } from "@iconscout/react-unicons";
 import Image from '../../img/profileImg.jpg'
+import useWindowSize from "../../components/utils/useWindowSize";
 
 
 const PostShare = () => {
@@ -21,7 +22,14 @@ const PostShare = () => {
       });
     }
   };
+  
+  const { width } = useWindowSize();
+
   return (
+    
+    <div>
+    {width > 700 && (
+      
     <div className="PostShare">
       <img src={Image} alt="" />
       <div>
@@ -66,6 +74,8 @@ const PostShare = () => {
 
 
       </div>
+    </div>
+    )}
     </div>
   );
 };
